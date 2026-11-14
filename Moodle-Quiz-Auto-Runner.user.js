@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Moodle Quiz Answer Saver, Auto Filler & Auto Runner 6.0
+// @name         Moodle Quiz Answer Saver, Auto Filler & Auto Runner 6.5
 // @namespace    http://aunonline.aun.edu.eg/
-// @version      6.0
+// @version      6.5
 // @description  Save and apply Moodle quiz answers, and auto-solve selected quizzes from the grade report with a floating control panel.
 // @match        http://aunonline.aun.edu.eg/med-ns/grade/report/user/index.php*
 // @match        http://aunonline.aun.edu.eg/med-ns/mod/quiz/view.php*
