@@ -2098,8 +2098,8 @@
                 <div class="panel" id="panel">
                     <div class="head">
                         <div>
-                            <div class="title">Quiz Auto Solver</div>
-                            <div class="sub">حل الكويزات تلقائياً</div>
+                            <div class="title">Quiz Auto Solver v6.5</div>
+                            <div class="sub">Developed by Amr Mohamed</div>
                         </div>
                         <button class="min" id="min" title="إخفاء">&minus;</button>
                     </div>
