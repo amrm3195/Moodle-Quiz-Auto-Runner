@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-6.0-1976d2?style=for-the-badge">
+  <img alt="version" src="https://img.shields.io/badge/version-6.5-1976d2?style=for-the-badge">
   <img alt="Tampermonkey" src="https://img.shields.io/badge/Tampermonkey-required-00485b?style=for-the-badge">
   <img alt="license" src="https://img.shields.io/badge/license-All%20Rights%20Reserved-lightgrey?style=for-the-badge">
   <img alt="platform" src="https://img.shields.io/badge/Chrome%20%7C%20Edge%20%7C%20Firefox-supported-2e7d32?style=for-the-badge">
@@ -23,8 +23,7 @@
   <a href="https://github.com/amrm3195/Moodle-Quiz-Auto-Runner/issues">الإبلاغ عن مشكلة</a>
 </p>
 
-<!-- ضع لقطة شاشة للوحة التحكم هنا، مثلاً: <p align="center"><img src="docs/screenshot.png" width="360"></p> -->
-
+<p align="center"><img src="docs/screenshot.png" width="360"></p>
 ---
 
 <div dir="rtl">
