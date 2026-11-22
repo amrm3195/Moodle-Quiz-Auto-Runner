@@ -1,7 +1,7 @@
 <h1 align="center">Moodle Quiz Auto Runner</h1>
 
 <p align="center">
-  <b>سكريبت Tampermonkey بيحل كويزات Moodle تلقائياً من صفحة الدرجات، من لوحة تحكم عائمة بسيطة.</b>
+  <b>سكريبت Tampermonkey بيحل كويزات Moodle تلقائياً من صفحة الدرجات، من لوحة تحكم عائمة بسيطة.<br>متاح لطلاب جامعة أسيوط والجامعة الأهلية (ASNU).</b>
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner.user.js"><b>تثبيت السكريبت</b></a>
+  <a href="#التثبيت"><b>تثبيت السكريبت</b></a>
   &nbsp;|&nbsp;
   <a href="#التثبيت">طريقة التثبيت</a>
   &nbsp;|&nbsp;
@@ -23,14 +23,22 @@
   <a href="https://github.com/amrm3195/Moodle-Quiz-Auto-Runner/issues">الإبلاغ عن مشكلة</a>
 </p>
 
-<p align="center"><img src="docs/screenshot.png" width="360"></p>
+<!-- ضع لقطة شاشة للوحة التحكم هنا، مثلاً: <p align="center"><img src="docs/screenshot.png" width="360"></p> -->
+
 ---
 
 <div dir="rtl">
 
 ## ما هو البرنامج؟
 
-Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخاصة بالجامعة (`aunonline.aun.edu.eg`). بيقرا قايمة الكويزات من صفحة الدرجات، وتختار منها اللي عايز تحلها، وهو بيعمل الباقي لوحده.
+Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخاصة بالجامعة. بيقرا قايمة الكويزات من صفحة الدرجات، وتختار منها اللي عايز تحلها، وهو بيعمل الباقي لوحده.
+
+فيه نسختين بنفس الشكل والمميزات، لكل جامعة نسخة بتشتغل على موقعها:
+
+| الجامعة | الموقع | الملف |
+|---|---|---|
+| جامعة أسيوط (AUN) | `aunonline.aun.edu.eg` | `Moodle-Quiz-Auto-Runner.user.js` |
+| الجامعة الأهلية (ASNU) | `www.asnu.edu.eg/elearning/med` | `Moodle-Quiz-Auto-Runner-ASNU.user.js` |
 
 الفكرة بتقوم على محاولتين لكل كويز:
 
@@ -53,20 +61,30 @@ Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخ�
 |---|---|
 | المتصفح | Chrome أو Edge أو Firefox |
 | الإضافة | [Tampermonkey](https://www.tampermonkey.net/) |
-| الموقع | `aunonline.aun.edu.eg` (مسار `med-ns`) |
+| الموقع | جامعة أسيوط: `aunonline.aun.edu.eg` (مسار `med-ns`)<br>الجامعة الأهلية: `www.asnu.edu.eg/elearning/med` |
 | اتصال | إنترنت عادي، والسكريبت نفسه ما بيبعت بيانات لأي مكان |
 
 <a id="التثبيت"></a>
 
 ## التثبيت
 
+### أي نسخة أثبّت؟
+
+اختار النسخة الخاصة بجامعتك. كل نسخة بتشتغل على موقع جامعتها بس.
+
+| جامعتك | رابط التثبيت |
+|---|---|
+| جامعة أسيوط (AUN) | [**Moodle-Quiz-Auto-Runner.user.js**](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner.user.js) |
+| الجامعة الأهلية (ASNU) | [**Moodle-Quiz-Auto-Runner-ASNU.user.js**](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner-ASNU.user.js) |
+
+> لو بتدرس في جامعة تانية، السكريبت مش هيشتغل عندك لأنه مكتوب لموقع جامعة معينة. لو الاتنين مثبتين مع بعض مفيش مشكلة، كل واحد بيشتغل على موقعه بس.
+
+### خطوات التثبيت
+
 1. ثبّت إضافة **Tampermonkey** على متصفحك من [الموقع الرسمي](https://www.tampermonkey.net/).
-2. افتح رابط السكريبت المباشر:
-
-   [**Moodle-Quiz-Auto-Runner.user.js**](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner.user.js)
-
+2. افتح رابط النسخة الخاصة بجامعتك من الجدول فوق.
 3. هتظهر لك صفحة Tampermonkey، دوس على **Install**.
-4. افتح صفحة الدرجات في Moodle وحدّثها. لازم تلاقي الدايرة الزرقاء أسفل الشمال.
+4. افتح صفحة الدرجات في موقع جامعتك وحدّثها. لازم تلاقي الدايرة الزرقاء أسفل الشمال.
 
 > ملاحظة: في بعض إصدارات Chrome الحديثة لازم تفعّل خيار **Allow User Scripts** (أو **Developer mode**) من صفحة إدارة الإضافات `chrome://extensions` لإضافة Tampermonkey، عشان السكريبتات تشتغل.
 
@@ -103,21 +121,21 @@ Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخ�
 
 ## التحديث
 
-السكريبت بيتحدث لوحده. Tampermonkey بيفحص الإصدار الجديد من رابط المستودع تقريباً كل يوم، ولما يلاقي نسخة أحدث بيثبتها بدون ما تعمل حاجة.
+السكريبت بيتحدث لوحده، سواء نسخة أسيوط أو نسخة الأهلية. Tampermonkey بيفحص الإصدار الجديد من رابط المستودع تقريباً كل يوم، ولما يلاقي نسخة أحدث بيثبتها بدون ما تعمل حاجة.
 
 لو عايز تحدّث فوراً:
 
 1. افتح لوحة Tampermonkey ← **Dashboard**.
 2. من تبويب **Utilities** دوس على **Check for userscript updates**.
-3. أو افتح رابط التثبيت المذكور فوق وأعد التثبيت، وهيحل محل النسخة القديمة.
+3. أو افتح رابط التثبيت الخاص بجامعتك (في قسم التثبيت) وأعد التثبيت، وهيحل محل النسخة القديمة.
 
-> للمطوّر: التحديث التلقائي بيشتغل بس لو رقم `@version` في هيدر السكريبت أكبر من الرقم المثبت عند المستخدمين. ارفع الرقم (مثلاً `6.0.1`) مع كل تعديل قبل ما ترفع الملف.
+> للمطوّر: التحديث التلقائي بيشتغل بس لو رقم `@version` في هيدر السكريبت أكبر من الرقم المثبت عند المستخدمين. ارفع الرقم (مثلاً `6.5.1`) مع كل تعديل قبل ما ترفع الملف، وكل ملف (أسيوط والأهلية) ليه رقم إصداره الخاص.
 
 ## الإبلاغ عن المشاكل والاقتراحات
 
 افتح [Issue جديد](https://github.com/amrm3195/Moodle-Quiz-Auto-Runner/issues) وحاول تكتب:
 
-- إصدار السكريبت (من هيدر السكريبت أو لوحة Tampermonkey).
+- جامعتك (أسيوط أو الأهلية) وإصدار السكريبت (من هيدر السكريبت أو لوحة Tampermonkey).
 - اسم المتصفح وإصداره، وإصدار Tampermonkey.
 - الخطوة اللي وقف عندها السكريبت (بدء المحاولة، المراجعة، الإنهاء ...) واسم الكويز.
 - أي رسالة خطأ ظاهرة في الـ Console: دوس `F12` ثم تبويب **Console**، وانسخ السطور الحمراء.
@@ -129,7 +147,7 @@ Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخ�
 
 | المشكلة | الحل |
 |---|---|
-| اللوحة مش بتظهر | تأكد إن السكريبت مفعّل في Tampermonkey، وإن رابط الصفحة هو `.../grade/report/user/index.php`، وإنك فتحتها بـ `http` زي ما في الهيدر. |
+| اللوحة مش بتظهر | تأكد إنك مثبّت النسخة الخاصة بجامعتك، وإن السكريبت مفعّل في Tampermonkey، وإن رابط الصفحة هو `.../grade/report/user/index.php`، وإنك فتحتها بـ `http` زي ما في الهيدر. |
 | السكريبت وقف في نص الكويز | افتح اللوحة وشوف الخطوة الحالية. جرّب تدوس إيقاف، ارجع لصفحة الدرجات، واختار الكويز ده لوحده. |
 | ظهرت ملاحظة "No second attempt available" | الكويز ده مسموح فيه بمحاولة واحدة، فالسكريبت حفظ الإجابات بس مقدرش يعيد الحل. |
 | ظهرت ملاحظة "Review not available" | المراجعة مقفولة في الكويز ده، فمفيش إجابات صحيحة تتحفظ. |
@@ -140,7 +158,7 @@ Moodle Quiz Auto Runner سكريبت بيشتغل على منصة Moodle الخ�
 
 - الإجابات المحفوظة بتتخزن في المتصفح عندك (`localStorage`) ومش بتتبعت لأي سيرفر. مسح بيانات الموقع من المتصفح بيمسحها.
 - لو طريقة حساب الدرجة في كويز معين هي "آخر محاولة"، خلي بالك إن المحاولة الأولى الفاضية ممكن تأثر على الدرجة لو العملية وقفت في النص. وفي الوضع الافتراضي (أعلى محاولة) مفيش مشكلة.
-- السكريبت مكتوب لواجهة الجامعة الحالية. لو الموقع غيّر شكل الصفحات، ممكن يحتاج تعديل.
+- السكريبت مكتوب لواجهة كل جامعة بشكلها الحالي. لو الموقع غيّر شكل الصفحات أو اتحدّث إصدار Moodle، ممكن يحتاج تعديل.
 
 ## تنبيه
 
@@ -158,8 +176,8 @@ All Rights Reserved. جميع الحقوق محفوظة © 2026 Amr Mohamed Soli
 
 ## English summary
 
-**Moodle Quiz Auto Runner** is a Tampermonkey userscript for the AUN Moodle site. It reads your quizzes from the grade report, lets you pick which ones to solve, and runs them automatically: a blind first attempt, saving the correct answers from the review page, then a second attempt filled with the saved answers. It has a floating collapsible panel with stats, quiz selection, and a progress bar.
+**Moodle Quiz Auto Runner** is a Tampermonkey userscript for the Moodle sites of Assiut University (AUN) and Al-Ahliyya University (ASNU). It reads your quizzes from the grade report, lets you pick which ones to solve, and runs them automatically: a blind first attempt, saving the correct answers from the review page, then a second attempt filled with the saved answers. It has a floating collapsible panel with stats, quiz selection, and a progress bar.
 
-**Install:** add [Tampermonkey](https://www.tampermonkey.net/), then open the [raw script link](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner.user.js) and click *Install*. Updates are delivered automatically through Tampermonkey. **Issues:** please use the [Issues page](https://github.com/amrm3195/Moodle-Quiz-Auto-Runner/issues).
+**Install:** add [Tampermonkey](https://www.tampermonkey.net/), then open the script for your university and click *Install*: [AUN](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner.user.js) or [ASNU](https://raw.githubusercontent.com/amrm3195/Moodle-Quiz-Auto-Runner/main/Moodle-Quiz-Auto-Runner-ASNU.user.js). Updates are delivered automatically through Tampermonkey. **Issues:** please use the [Issues page](https://github.com/amrm3195/Moodle-Quiz-Auto-Runner/issues).
 
 &copy; 2026 Amr Mohamed Soliman. All Rights Reserved.
